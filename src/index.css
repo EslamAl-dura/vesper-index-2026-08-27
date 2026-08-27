@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'Space Grotesk', sans-serif; color: #e8e7df; background: #11110f; --ink: #11110f; --paper: #e8e7df; --acid: #d8ff48; }
+:root.light { color: #11110f; background: #e8e7df; --ink: #e8e7df; --paper: #11110f; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; overflow-x: hidden; }
+::selection { background: #d8ff48; color: #11110f; }
+.grid-paper { background-image: linear-gradient(rgba(232,231,223,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(232,231,223,.08) 1px, transparent 1px); background-size: 34px 34px; }
+.light .grid-paper { background-image: linear-gradient(rgba(17,17,15,.09) 1px, transparent 1px), linear-gradient(90deg, rgba(17,17,15,.09) 1px, transparent 1px); }
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
